@@ -68,3 +68,15 @@ You should see the CampusFlow heading, the Add a task form, and the Your tasks l
 
 ## Manual checking
 Follow the steps above and record the actual result in the Sprint 1 report. The report should include successful task creation, invalid-input rejection, completion status updates, persistence after refresh, and recent Git history. Do not report a pass unless you actually observe the expected result.
+
+## Troubleshooting
+- **The page does not open:** confirm the server command is still running and the browser address is exactly `http://localhost:8000`.
+- **Port 8000 is already in use:** stop the other server if appropriate, or run `python3 -m http.server 8001` and open `http://localhost:8001`.
+- **Tasks are missing:** return to the same browser profile used to create them. Private browsing and another browser profile use separate storage. Check that browser site data has not been cleared.
+- **Changes are not being stored:** make sure the browser allows site storage for localhost and that the device has available storage. The app does not upload or back up tasks to a server.
+
+## Interaction and accessibility notes
+- The task title is required; category is selected from a list and due date is optional.
+- Validation errors are announced to assistive technology through an alert region. Task-list changes are announced through a status region.
+- Form controls and actions use labels and accessible names. The layout adapts for narrow screens.
+- The task count and progress summary refer to tasks still marked as to do; the Completed filter shows completed tasks.
