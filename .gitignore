@@ -1,0 +1,28 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments (not required for this project)
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated artifacts and local test outputs
+coverage/
+dist/
+build/
+*.log
+*.mp4
+*.webm
+screenshots/
